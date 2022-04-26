@@ -20,6 +20,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #22A8A870;
 }
 
 .um {
@@ -37,7 +38,8 @@ body {
 
 .titulo {
   margin: 3rem;
-  color: #d6570d;
+  color: #d15c18;
+  font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 5rem;
 }
@@ -48,5 +50,35 @@ body {
   text-decoration: none;
   color: #fff;
   font-weight: bold;
+  margin: 0 1.5rem 0 0;
+  font-size: 1.5rem;
+  transition: 0.6s all;
+}
 
+.menu .nav a:hover {
+  color: #d15c18;
+  font-size: 2rem;
+}
+
+.menu {
+  margin-bottom: 1.5rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.subtitulo {
+  margin-bottom: 1.5rem;
+
+}
+
+.lista li{
+  list-style: none;
+  margin: 1rem;
+  font-size: 1.5rem;
 }
