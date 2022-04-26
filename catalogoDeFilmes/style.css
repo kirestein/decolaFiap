@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto Mono", monospace;
+  text-align: center;
+  background-color: #000000;
+  background-size: cover;
+  background-position: center top;
+  background-image: url("https://feriasdecinema.com/wp-content/uploads/2018/07/poderoso-chefao-cenarios-italia.jpg");
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+}
+
+.page-title {
+  color: #ffffff;
+  margin: 0 0 5px;
+}
+
+.page-subtitle {
+  color: #ffffff;
+  margin-top: 5px;
+}
+
+.page-logo {
+  width: 200px;
+}
+
+.alura-logo {
+  width: 40px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+body > img {
+  margin: 0 10px;
+}
+
+img {
+  max-height: 250px;
+}
+
+#filme,
+#titulo {
+  width: 30rem;
+  margin: 1rem;
+  height: 2rem;
+  border-radius: 0.5rem;
+}
+
+.botao {
+  font-size: 1.5rem;
+  border-radius: 0.5rem;
+  margin: 1rem;
+  padding: 2rem;
+  background-color: #a71601;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: red;
+}
+
+#erro {
+  background-color: red;
+  color: #fff;
+}
+
+#catalogo {
+  display: flex;
+  flex-flow: wrap;
+  padding: 1rem;
+}
+
+.filme {
+  padding: 1.5rem;
+}
+
+h2 {
+  background-color: #000;
+}
+
+form {
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+  display: inline-block;
+
+  z-index: 2000;
+}
+
+.retangulo {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  background-color: #000;
+  z-index: -1;
+  border-radius: 0.5rem;
+  opacity: 0.5;
+  left: 20rem;
+}
