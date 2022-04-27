@@ -48,8 +48,6 @@ function mostrarFilmes() {
   } while (i < listaDeFilmes.length);
 }
 
-function DeleteButton() {
-  listaDeFilmes[i].innerHTML = `<button tyoe="submit"> deletar </button>`;
-}
+
 
 
