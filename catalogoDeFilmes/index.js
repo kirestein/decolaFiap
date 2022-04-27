@@ -16,10 +16,10 @@ let titulos = [
   "O Poderoso Chefão"
 ];
 let catalogo = document.querySelector("#catalogo");
-
+let i = 0;
 let erro = document.querySelector("#erro");
 
-for (let i; i < listaDeFilmes.length; i++) {
+for (i; i < listaDeFilmes.length; i++) {
   catalogo.innerHTML += `<div class="filme"><img src=${listaDeFilmes[i]}><figcaption>${titulos[i]}</figcaption></div>`;
 }
 
