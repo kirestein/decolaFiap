@@ -19,7 +19,11 @@
 
 let a = 0
 
-while (a < 3) {
-  console.log('Bom dia!')
+while (a > 0) {
+  console.log('Bom dia do laço while!')
   a++
 }
+
+do {
+  console.log('Bom dia do laço do ... while!')
+} while(a > 0)
