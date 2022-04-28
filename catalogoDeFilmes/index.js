@@ -4,7 +4,8 @@ let listaDeFilmes = [
   "https://media.fstatic.com/gzsYUKX6TO32cryrv42xQOsppaE=/290x478/smart/media/movies/covers/2020/05/MASK_OF_ZORRO_1400x2100_EST.jpg",
   "https://upload.wikimedia.org/wikipedia/pt/thumb/9/90/Avengers_Infinity_War.jpg/250px-Avengers_Infinity_War.jpg",
   "https://upload.wikimedia.org/wikipedia/pt/thumb/b/b8/The_Impossible.jpg/200px-The_Impossible.jpg",
-  "https://a-static.mlcdn.com.br/1500x1500/quadro-decorativo-o-poderoso-chefao-filmes-cartaz-cinema-decoracoes-com-moldura-g02-vital-quadros/vitalquadrosdobrasil/080008840804/006c5306ba436d3cb06b1468472269dd.jpg"
+  "https://a-static.mlcdn.com.br/1500x1500/quadro-decorativo-o-poderoso-chefao-filmes-cartaz-cinema-decoracoes-com-moldura-g02-vital-quadros/vitalquadrosdobrasil/080008840804/006c5306ba436d3cb06b1468472269dd.jpg",
+  "https://upload.wikimedia.org/wikipedia/pt/thumb/0/00/Spider-Man_No_Way_Home_poster.jpg/250px-Spider-Man_No_Way_Home_poster.jpg"
 ];
 
 let titulos = [
@@ -13,7 +14,8 @@ let titulos = [
   "Zorro",
   "Guerra Infinita",
   "O Impssível",
-  "O Poderoso Chefão"
+  "O Poderoso Chefão",
+  "Spide-Man No Way Home"
 ];
 let catalogo = document.querySelector("#catalogo");
 let i = 0;
