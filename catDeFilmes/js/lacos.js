@@ -8,8 +8,17 @@
 // console.log(a += 1)// a = 2 + 1 => a = 3
 // console.log(++a)//a = 3 + 1 => a = 4
 
-for (let i = 0; i <= 10; i++) {
-  for(let j = 0; j <= 10; j++) {
-    console.log(`${i} * ${j} = ${i * j}`)
-  }
+// for (let i = 0; i <= 10; i++) {
+//   for(let j = 0; j <= 10; j++) {
+//     console.log(`${i} * ${j} = ${i * j}`)
+//   }
+// }
+
+//* construindo um loop while
+
+let a = 0
+
+while (a < 3) {
+  console.log('Bom dia!')
+  a++
 }
