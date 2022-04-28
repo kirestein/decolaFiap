@@ -1,10 +1,15 @@
 //! Laços de Repetição são: For, While e Do ... While
 
-//* vamos construir um loop para fazer  as tabuadas
+//* vamos construir um loop for para fazer as tabuadas de 0 a 10
 
 // let a = 0
 // console.log(a = 0 + 1)// a = 1
 // console.log(a = a + 1)//a = 1 + 1 => a = 2
 // console.log(a += 1)// a = 2 + 1 => a = 3
 // console.log(++a)//a = 3 + 1 => a = 4
-for (let i = 0; i <= 10; i++) {}
+
+for (let i = 0; i <= 10; i++) {
+  for(let j = 0; j <= 10; j++) {
+    console.log(`${i} * ${j} = ${i * j}`)
+  }
+}
