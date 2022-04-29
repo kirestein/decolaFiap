@@ -23,7 +23,7 @@ let erro = document.querySelector('#erro')
 
 for (i; i < listaDeFilmes.length; i++) {
   catalogo.innerHTML += `<div class="filme">
-    <img src=${listaDeFilmes[i]}><figcaption>${listaDeTitulos[i]}</figcaption>
+    <img src=${listaDeFilmes[i]}><figcaption>${listaDeTitulos[i]}
   </div>`
 }
 
@@ -47,3 +47,13 @@ function cadastrar() {
   
 }
 
+function mostrarFilmes() {
+  do {
+    catalogo.innerHTML += `
+    <div>
+      <img src=${listaDeFilmes[i]} alt=${listaDeTitulos[i]}><figcaption>${listaDeTitulos[i]}
+    </div>
+    `
+    i++
+  } while (i < listaDeFilmes.length)
+}
