@@ -40,7 +40,7 @@ function cadastrar() {
     listaDeFilmes.push(novoFilme)
     listaDeTitulos.push(novoTitulo)
     erro.innerHTML = ''
-    //? Vamos chamar uma função para mostrar os filmes
+    mostrarFilmes()
   }
   document.querySelector('#filme').value = ''  
   document.querySelector('#titulo').value = ''  
@@ -50,7 +50,7 @@ function cadastrar() {
 function mostrarFilmes() {
   do {
     catalogo.innerHTML += `
-    <div>
+    <div class="filme">
       <img src=${listaDeFilmes[i]} alt=${listaDeTitulos[i]}><figcaption>${listaDeTitulos[i]}
     </div>
     `
