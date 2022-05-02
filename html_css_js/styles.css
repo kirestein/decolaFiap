@@ -55,10 +55,10 @@ body {
   transition: 0.6s all;
 }
 
-.menu .nav a:hover {
+/* .menu .nav a:hover {
   color: #d15c18;
   font-size: 2rem;
-}
+} */
 
 .menu {
   margin-bottom: 1.5rem;
