@@ -50,9 +50,19 @@ function showTasks() {
   addBtn.classList.remove('active')
   listArr.forEach((element, index) => {
     newLiTag += `
-    <li>${element}<span onclick="deleteTask()"></span></li>
+    <li>${element}<span onclick="deleteTask(${index})"></span></li>
     `
   }) 
   todoList.innerHTML = newLiTag // Adicionando uma nova li dentro da nossa lista no HTML
   inputBox.value = '' // uma vez adicionada a tarefa deixe o campo entrada em branco
+}
+
+//função para deletar uma tarefa específica
+function deleteTask(index) {
+  let getLocalStorage = localStorage.getItem('New Todo')
+  listArr = JSON.parse(getLocalStorage)
+  listArr.splice(index, 1) // exclui ou remove um determinado item indexado
+  //? depois de remover o item atualize noivamente o armazenamento local
+  localStorage.setItem('New Todo', JSON.stringify(listArr))
+  showTasks()
 }
