@@ -13,3 +13,46 @@ inputBox.onkeyup = _ => {
     addBtn.classList.remove('active')
   }
 }
+
+showTasks()
+
+addBtn.onclick = _ => {
+  let userData = inputBox.value
+  let getLocalStorage = localStorage.getItem('New Todo') //Esta variável vai pegar o armazenamento local
+  if(getLocalStorage == null) { // vamos verificar se o armazenamento local for nulo
+    listArr = [] // vamos criar um array em branco
+  }else{
+    listArr = JSON.parse(getLocalStorage) //estamos empurrando ou adicionando dados do usuário à nossa lista
+  }
+  listArr.push(userData) //Empurrando para dentro do array os dados do usuário
+  localStorage.setItem('New Todo', JSON.stringify(listArr)) //Estamos transformando um objeto js em um fragmento js
+  showTasks() //chamando a função showTasks
+}
+
+//função para adicionar tarefas dentro da lista
+function showTasks() {
+  let getLocalStorage = localStorage.getItem('New Todo') //Esta variável vai pegar o armazenamento local
+  if (getLocalStorage == null) {
+    listArr = []
+  }else{
+    listArr = JSON.parse(getLocalStorage)
+  }
+  const pendingNum = document.querySelector('.pendingNum')
+  pendingNum.textContent = listArr.length
+
+  if(listArr.length > 0) { // Se o tamanho do array for maior que 0
+    deleteAllBtn.classList.add('active') //ativa a classe active
+  }else{
+    deleteAllBtn.classList.remove('active') //desativa a classe active
+  }
+
+  let newLiTag = ''
+  addBtn.classList.remove('active')
+  listArr.forEach((element, index) => {
+    newLiTag += `
+    <li>${element}<span onclick="deleteTask()"></span></li>
+    `
+  }) 
+  todoList.innerHTML = newLiTag // Adicionando uma nova li dentro da nossa lista no HTML
+  inputBox.value = '' // uma vez adicionada a tarefa deixe o campo entrada em branco
+}
